@@ -6,59 +6,85 @@
   	<title>Counter-Stike Global Offensive Pro Teams</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <script>
+    function playSound(headshot) {
+      var sound=document.getElementById(headshot).play();
+        sound=document.getElementById(headshot);
+      sound.volume=0.2;
+
+    }
+
+  </script>
   <body>
+    <div class="large-container">
+      <div class="resizeable-container">
+      <!--navbar initiation -->
+      <nav>
+        <img src="headshot.png" onclick="javascript:playSound('headshot').play();"></img>
 
-    <!--navbar initiation -->
-    <nav>
-      <img src="headshot.png"></img>
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-    </nav>
+        <a href="#1">place 1</a>
+        <a href="#2">place 2</a>
+        <a href="#3">place 3</a>
+        <a href="#3">place 4</a>
+        <a href="#3">place 5</a>
+          <audio id="headshot"  src="headshot.mp3" preload="auto">
+            
+          </audio>
 
-    <div>
-      <img src="ESL.png"></img>
+      </nav>
+
+      <div class="ESL">
+        <img src="ESL.png"></img>
+      </div>
+
+      <!--pro logos/info here -->
+      <div class="grid-container-logo">
+
+        <div class="grid-item-logo">
+          <img src="virtus-pro.png"></img>
+          <br>
+            <div class="dropdown">
+                <button class="dropbtn">Players</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+        </div>
+        <div class="grid-item-logo">
+          <img src="astralis.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="g2.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="faze-clan.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="heroic.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="navi.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="nip.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="vitality.png"></img>
+        </div>
+        <div class="grid-item-logo">
+          <img src="gambit.png"></img>
+        </div>
+
+      </div>
+
+      <!-- footer initiation-->
+
+        <footer>
+            <p>mr9 &copy; all rights reserved</p>
+        </footer> 
     </div>
-
-    <!--pro logos/info here -->
-    <div class="grid-container-logo">
-
-      <div class="grid-item-logo">
-        <img src="virtus-pro.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="astralis.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="cloud-9.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="faze-clan.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="finatic.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="navi.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="ninjas.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="vitality.png"></img>
-      </div>
-      <div class="grid-item-logo">
-        <img src="renegades.png"></img>
-      </div>
-
-    </div>
-
-    <!-- footer initiation-->
-    <footer>
-
-      <p >MR9 &copy;2021 all rights reserved</p>
-    </footer>
-
+  </div>
     </body>
-
 </html>
